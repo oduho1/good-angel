@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>good angel ministry</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#64748b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .service-times {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+        }
+        input:focus {
+            outline: none;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .event-date {
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between h-20">
+            <a href="#" class="flex items-center">
+                <span class="text-3xl font-['Pacifico'] text-primary">logo</span>
+            </a>
+            
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Home</a>
+                <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">About us</a>
+                <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Services</a>
+                <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Ministries</a>
+                <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Events</a>
+                <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Give</a>
+                <a href="#" class="text-gray-800 font-medium hover:text-primary transition-colors">Contact us</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden md:inline-flex items-center justify-center bg-primary text-white px-5 py-2.5 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors">
+                    Watch Live
+                </a>
+                
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+                        <i class="ri-facebook-fill ri-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+                        <i class="ri-instagram-line ri-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+                        <i class="ri-youtube-line ri-lg"></i>
+                    </a>
+                </div>
+                
+                <button class="lg:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="pt-20 relative">
+        <div class="w-full h-[600px] relative overflow-hidden">
+            <div style="background-image: url('https://readdy.ai/api/search-image?query=Beautiful%20church%20community%20gathering%20with%20diverse%20people%20of%20all%20ages%20smiling%20and%20connecting%2C%20warm%20natural%20lighting%2C%20soft%20bokeh%20effect%2C%20professional%20photography%2C%20high%20resolution%2C%20church%20interior%20with%20wooden%20beams%20and%20stained%20glass%20windows%20visible%20in%20background%2C%20welcoming%20atmosphere&width=1920&height=1080&seq=1&orientation=landscape');" class="absolute inset-0 bg-cover bg-center"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
+            
+            <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+                <div class="max-w-2xl text-white">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">Welcome to Good angel ministry</h1>
+                    <p class="text-xl mb-8">A place where faith grows, community thrives, and everyone belongs.</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="#" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors text-center">
+                            Plan Your Visit
+                        </a>
+                        <a href="#" class="bg-white text-gray-900 px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-gray-100 transition-colors text-center">
+                            Watch Online
+                        </a>
+                    </div>
+                    
+                    <div class="service-times px-6 py-4 rounded-lg inline-block">
+                        <h3 class="text-gray-900 font-semibold mb-2">Service Times</h3>
+                        <div class="flex gap-x-8 text-gray-800">
+                            <div>
+                                <p class="font-medium">Sunday</p>
+                                <p>9:00 AM & 11:00 AM</p>
+                            </div>
+                            <div>
+                                <p class="font-medium">Wednesday</p>
+                                <p>7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Upcoming Events</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Join us for these special gatherings designed to strengthen your faith and build community.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+                <!-- Event 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md flex">
+                    <div class="bg-primary text-white p-4 flex flex-col items-center justify-center min-w-[80px]">
+                        <span class="event-date text-2xl font-bold">APR</span>
+                        <span class="text-3xl font-bold">26</span>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Spring Community Festival</h3>
+                        <p class="text-gray-600 mb-4">Join us for a day of family fun, food, and fellowship as we celebrate spring together.</p>
+                        <div class="flex items-center text-gray-500 mb-4">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>10:00 AM - 3:00 PM</span>
+                        </div>
+                        <div class="flex items-center text-gray-500 mb-6">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span>Church Grounds</span>
+                        </div>
+                        <a href="#" class="inline-block text-primary font-medium hover:underline">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md flex">
+                    <div class="bg-primary text-white p-4 flex flex-col items-center justify-center min-w-[80px]">
+                        <span class="event-date text-2xl font-bold">MAY</span>
+                        <span class="text-3xl font-bold">05</span>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Marriage Enrichment Workshop</h3>
+                        <p class="text-gray-600 mb-4">A special weekend designed to strengthen marriages through practical teaching and activities.</p>
+                        <div class="flex items-center text-gray-500 mb-4">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>9:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="flex items-center text-gray-500 mb-6">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span>Fellowship Hall</span>
+                        </div>
+                        <a href="#" class="inline-block text-primary font-medium hover:underline">Register Now</a>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md flex">
+                    <div class="bg-primary text-white p-4 flex flex-col items-center justify-center min-w-[80px]">
+                        <span class="event-date text-2xl font-bold">MAY</span>
+                        <span class="text-3xl font-bold">12</span>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Youth Summer Camp Registration</h3>
+                        <p class="text-gray-600 mb-4">Final day to register for our annual youth summer camp. Don't miss this life-changing experience!</p>
+                        <div class="flex items-center text-gray-500 mb-4">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>Registration Deadline</span>
+                        </div>
+                        <div class="flex items-center text-gray-500 mb-6">
+                            <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span>Online or Church Office</span>
+                        </div>
+                        <a href="#" class="inline-block text-primary font-medium hover:underline">Register Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="inline-flex items-center justify-center bg-white border border-gray-300 text-gray-700 px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-gray-50 transition-colors">
+                    View All Events
+                    <div class="w-5 h-5 flex items-center justify-center ml-2">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministry Programs Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Ministries</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the many ways you can connect, grow, and serve within our church community.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ministry 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Diverse%20group%20of%20children%20engaged%20in%20fun%20Bible%20learning%20activities%20with%20caring%20adult%20teachers%20in%20a%20bright%2C%20colorful%20church%20classroom%20environment%2C%20smiling%20faces%2C%20educational%20materials%20visible%2C%20safe%20and%20welcoming%20atmosphere&width=600&height=400&seq=2&orientation=landscape" alt="Children's Ministry" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Children's Ministry</h3>
+                        <p class="text-gray-600 mb-4">Creating a fun, safe environment where children can learn about God's love through age-appropriate activities and Bible teaching.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            Learn More
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ministry 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Energetic%20youth%20group%20of%20teenagers%20engaged%20in%20worship%20and%20fellowship%2C%20contemporary%20church%20youth%20room%20with%20comfortable%20seating%2C%20games%20area%20visible%20in%20background%2C%20diverse%20group%20of%20teens%20with%20youth%20pastors%2C%20warm%20lighting%2C%20candid%20moment%20of%20connection&width=600&height=400&seq=3&orientation=landscape" alt="Youth Ministry" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Youth Ministry</h3>
+                        <p class="text-gray-600 mb-4">Empowering teens to grow in their faith through relevant teaching, meaningful relationships, and opportunities to serve.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            Learn More
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ministry 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Diverse%20small%20group%20of%20adults%20gathered%20in%20a%20cozy%20living%20room%20for%20Bible%20study%2C%20open%20Bibles%2C%20coffee%20cups%2C%20warm%20lighting%2C%20engaged%20discussion%2C%20mixture%20of%20ages%20and%20ethnicities%2C%20comfortable%20home%20setting&width=600&height=400&seq=4&orientation=landscape" alt="Adult Small Groups" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Adult Small Groups</h3>
+                        <p class="text-gray-600 mb-4">Building community through weekly small group gatherings where adults connect, study the Bible, and support one another.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            Learn More
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ministry 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Church%20worship%20team%20performing%20on%20stage%20with%20professional%20lighting%2C%20diverse%20musicians%20with%20guitars%2C%20drums%2C%20keyboard%2C%20vocalists%20with%20microphones%2C%20contemporary%20worship%20setting%2C%20congregation%20visible%20in%20foreground%2C%20emotional%20worship%20moment&width=600&height=400&seq=5&orientation=landscape" alt="Worship Ministry" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Worship Ministry</h3>
+                        <p class="text-gray-600 mb-4">Using music and creative arts to lead our congregation in authentic worship experiences that honor God.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            Learn More
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ministry 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Church%20volunteers%20serving%20food%20at%20community%20outreach%20event%2C%20diverse%20group%20of%20helpers%20in%20matching%20t-shirts%2C%20food%20distribution%20line%2C%20grateful%20recipients%2C%20urban%20setting%2C%20warm%20interactions%20between%20volunteers%20and%20community%20members&width=600&height=400&seq=6&orientation=landscape" alt="Outreach Ministry" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Outreach Ministry</h3>
+                        <p class="text-gray-600 mb-4">Serving our local community and beyond through practical acts of kindness, support, and sharing God's love in action.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            Learn More
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ministry 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Senior%20adults%20gathering%20for%20fellowship%20in%20church%20setting%2C%20diverse%20group%20of%20elderly%20people%20enjoying%20conversation%20over%20coffee%20and%20refreshments%2C%20comfortable%20seating%20area%2C%20warm%20lighting%2C%20smiling%20faces%2C%20some%20using%20mobility%20aids%2C%20intergenerational%20helpers%20visible&width=600&height=400&seq=7&orientation=landscape" alt="Senior Adult Ministry" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Senior Adult Ministry</h3>
+                        <p class="text-gray-600 mb-4">Providing fellowship, spiritual growth, and service opportunities for our senior adult members in a supportive community.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            Learn More
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermons & Resources Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Latest Sermons & Resources</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Grow in your faith journey with our library of sermons, Bible studies, and other spiritual resources.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Featured Sermon -->
+                <div class="lg:col-span-2 bg-white rounded-lg overflow-hidden shadow-md">
+                    <div class="aspect-video bg-gray-200 relative">
+                        <img src="https://readdy.ai/api/search-image?query=Pastor%20preaching%20at%20modern%20church%20pulpit%20with%20Bible%2C%20congregation%20visible%20in%20foreground%2C%20professional%20lighting%2C%20contemporary%20church%20interior%20with%20wooden%20elements%2C%20projection%20screen%20visible%20with%20Bible%20verse%2C%20emotional%20sermon%20moment&width=800&height=450&seq=8&orientation=landscape" alt="Latest Sermon" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition-colors">
+                                <i class="ri-play-fill ri-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-2">
+                            <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                <i class="ri-calendar-line"></i>
+                            </div>
+                            <span>April 21, 2025</span>
+                            <span class="mx-2">•</span>
+                            <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span>45 minutes</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Finding Peace in Troubled Times</h3>
+                        <p class="text-gray-600 mb-4">Pastor Michael Richardson shares powerful insights on how to maintain inner peace despite external chaos, drawing from Philippians 4:6-7.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="#" class="inline-flex items-center justify-center bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
+                                <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                    <i class="ri-download-line"></i>
+                                </div>
+                                Download Audio
+                            </a>
+                            <a href="#" class="inline-flex items-center justify-center bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
+                                <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                    <i class="ri-file-text-line"></i>
+                                </div>
+                                Sermon Notes
+                            </a>
+                            <a href="#" class="inline-flex items-center justify-center bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
+                                <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                    <i class="ri-share-line"></i>
+                                </div>
+                                Share
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Sermons List -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Recent Sermons</h3>
+                    
+                    <div class="space-y-4 mb-6">
+                        <!-- Sermon 1 -->
+                        <div class="flex gap-4">
+                            <div class="w-20 h-20 flex-shrink-0 rounded overflow-hidden">
+                                <img src="https://readdy.ai/api/search-image?query=Pastor%20preaching%20at%20pulpit%2C%20side%20angle%2C%20church%20interior%20visible%2C%20attentive%20congregation%2C%20warm%20lighting&width=100&height=100&seq=9&orientation=squarish" alt="Sermon Thumbnail" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div>
+                                <h4 class="font-medium">The Power of Gratitude</h4>
+                                <p class="text-gray-500 text-sm mb-1">April 14, 2025</p>
+                                <a href="#" class="text-primary text-sm font-medium hover:underline">Listen Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Sermon 2 -->
+                        <div class="flex gap-4">
+                            <div class="w-20 h-20 flex-shrink-0 rounded overflow-hidden">
+                                <img src="https://readdy.ai/api/search-image?query=Female%20pastor%20teaching%20from%20Bible%2C%20church%20setting%2C%20engaged%20audience%2C%20professional%20lighting%2C%20contemporary%20church%20interior&width=100&height=100&seq=10&orientation=squarish" alt="Sermon Thumbnail" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Walking in Faith</h4>
+                                <p class="text-gray-500 text-sm mb-1">April 7, 2025</p>
+                                <a href="#" class="text-primary text-sm font-medium hover:underline">Listen Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Sermon 3 -->
+                        <div class="flex gap-4">
+                            <div class="w-20 h-20 flex-shrink-0 rounded overflow-hidden">
+                                <img src="https://readdy.ai/api/search-image?query=Pastor%20teaching%20with%20Bible%20open%2C%20casual%20setting%2C%20small%20group%20visible%2C%20intimate%20teaching%20moment%2C%20church%20classroom&width=100&height=100&seq=11&orientation=squarish" alt="Sermon Thumbnail" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Loving Your Neighbor</h4>
+                                <p class="text-gray-500 text-sm mb-1">March 31, 2025</p>
+                                <a href="#" class="text-primary text-sm font-medium hover:underline">Listen Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-4 border-t border-gray-200">
+                        <h3 class="text-lg font-semibold mb-3">Resources</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="inline-flex items-center text-gray-700 hover:text-primary">
+                                    <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                        <i class="ri-book-open-line"></i>
+                                    </div>
+                                    Daily Devotionals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-flex items-center text-gray-700 hover:text-primary">
+                                    <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                        <i class="ri-file-list-3-line"></i>
+                                    </div>
+                                    Bible Study Guides
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-flex items-center text-gray-700 hover:text-primary">
+                                    <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                        <i class="ri-folder-line"></i>
+                                    </div>
+                                    Sermon Archive
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Community</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We're more than just Sunday services. We're a family of believers growing together in faith and love.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <!-- Photo Gallery -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Church Life</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="aspect-square rounded-lg overflow-hidden">
+                            <img src="https://readdy.ai/api/search-image?query=Church%20baptism%20ceremony%2C%20pastor%20baptizing%20young%20person%20in%20baptismal%20pool%2C%20congregation%20watching%2C%20emotional%20moment%2C%20contemporary%20church%20interior%2C%20professional%20photography&width=400&height=400&seq=12&orientation=squarish" alt="Church Life" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="aspect-square rounded-lg overflow-hidden">
+                            <img src="https://readdy.ai/api/search-image?query=Church%20community%20service%20project%2C%20diverse%20volunteers%20painting%20community%20center%2C%20teamwork%2C%20matching%20t-shirts%2C%20urban%20setting%2C%20candid%20photography&width=400&height=400&seq=13&orientation=squarish" alt="Church Life" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="aspect-square rounded-lg overflow-hidden">
+                            <img src="https://readdy.ai/api/search-image?query=Church%20potluck%20dinner%2C%20diverse%20congregation%20sharing%20meal%20in%20fellowship%20hall%2C%20tables%20of%20food%2C%20multi-generational%20gathering%2C%20warm%20lighting%2C%20candid%20photography&width=400&height=400&seq=14&orientation=squarish" alt="Church Life" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="aspect-square rounded-lg overflow-hidden">
+                            <img src="https://readdy.ai/api/search-image?query=Church%20worship%20service%2C%20congregation%20with%20raised%20hands%2C%20emotional%20worship%20moment%2C%20contemporary%20church%20setting%2C%20professional%20lighting%2C%20wide%20angle%20view&width=400&height=400&seq=15&orientation=squarish" alt="Church Life" class="w-full h-full object-cover object-top">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonials -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Testimonials</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20middle-aged%20woman%20with%20shoulder-length%20brown%20hair%2C%20warm%20smile%2C%20neutral%20background%2C%20business%20casual%20attire&width=100&height=100&seq=16&orientation=squarish" alt="Testimonial" class="w-full h-full object-cover object-top">
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Rebecca Thompson</h4>
+                                    <p class="text-gray-500 text-sm">Member since 2018</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">"Finding Grace Community Church was truly a blessing for our family. The children's ministry is exceptional, and we've formed deep friendships through our small group. This church has become our spiritual home."</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20young%20African%20American%20man%20with%20short%20hair%2C%20friendly%20smile%2C%20neutral%20background%2C%20business%20casual%20attire&width=100&height=100&seq=17&orientation=squarish" alt="Testimonial" class="w-full h-full object-cover object-top">
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Marcus Johnson</h4>
+                                    <p class="text-gray-500 text-sm">Member since 2020</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700">"I was looking for a church where I could grow spiritually and serve others. The welcoming atmosphere and authentic teaching at Grace Community Church has transformed my faith journey in ways I never expected."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Get Involved -->
+            <div class="bg-gray-100 rounded-lg p-8 md:p-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Get Involved</h3>
+                        <p class="text-gray-700 mb-6">There are many ways to connect, grow, and serve at Grace Community Church. Whether you're looking for a small group, volunteer opportunity, or just want to learn more about our church, we'd love to help you find your place.</p>
+                        <div class="space-y-4">
+                            <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-group-line"></i>
+                                </div>
+                                Join a Small Group
+                            </a>
+                            <div class="block"></div>
+                            <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                Volunteer Opportunities
+                            </a>
+                            <div class="block"></div>
+                            <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-user-add-line"></i>
+                                </div>
+                                New Member Classes
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://readdy.ai/api/search-image?query=Diverse%20church%20small%20group%20meeting%20in%20living%20room%2C%20Bibles%20open%2C%20engaged%20discussion%2C%20warm%20lighting%2C%20comfortable%20home%20setting%2C%20coffee%20and%20snacks%20visible%2C%20multi-generational%20group&width=600&height=400&seq=18&orientation=landscape" alt="Small Group" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Contact & Location</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We'd love to hear from you! Reach out with any questions or visit us for a service.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Map & Contact Info -->
+                <div>
+                    <div class="h-[400px] rounded-lg overflow-hidden mb-6 relative">
+                        <div style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');" class="absolute inset-0 bg-cover bg-center"></div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+                                    <i class="ri-map-pin-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Address</h4>
+                                    <p class="text-gray-600">47 kakuma distribution food Avenue<br>Citylodwar</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+                                    <i class="ri-time-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Office Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+                                    <i class="ri-phone-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Phone</h4>
+                                    <p class="text-gray-600">(0727609518)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+                                    <i class="ri-mail-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p class="text-gray-600">info@goodangelministry@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6">Send Us a Message</h3>
+                    
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Your name">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Your email">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 mb-2">Phone (Optional)</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Your phone number">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Message subject">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Your message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1 - About -->
+                <div>
+                    <a href="#" class="inline-block mb-4">
+                        <span class="text-3xl font-['Pacifico'] text-white">logo</span>
+                    </a>
+                    <p class="text-gray-400 mb-6">Grace Community Church is a welcoming community of believers committed to sharing God's love and growing in faith together.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 - Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Ministries</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sermons</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Give Online</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 - Service Times -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Service Times</h3>
+                    <ul class="space-y-3">
+                        <li class="text-gray-400">
+                            <span class="block font-medium text-white">Sunday Services</span>
+                            9:00 AM & 11:00 AM
+                        </li>
+                        <li class="text-gray-400">
+                            <span class="block font-medium text-white">Wednesday Night</span>
+                            7:00 PM
+                        </li>
+                        <li class="text-gray-400">
+                            <span class="block font-medium text-white">Youth Group</span>
+                            Wednesdays at 6:30 PM
+                        </li>
+                        <li class="text-gray-400">
+                            <span class="block font-medium text-white">Children's Ministry</span>
+                            During all services
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 - Newsletter -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates, announcements, and spiritual encouragement.</p>
+                    <form class="mb-4">
+                        <div class="flex">
+                            <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-800 border-none rounded-l text-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-primary">
+                            <button type="submit" class="bg-primary text-white px-4 py-2 !rounded-r-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                    <p class="text-gray-500 text-sm">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p class="mb-4">&copy; 2025 good angel ministry. All rights reserved.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="hover:text-gray-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-400 transition-colors">Terms of Use</a>
+                    <a href="#" class="hover:text-gray-400 transition-colors">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle functionality would go here
+        });
+    </script>
+</body>
+</html>
